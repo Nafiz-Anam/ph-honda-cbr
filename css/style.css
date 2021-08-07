@@ -1,0 +1,526 @@
+/* ================
+
+Developer : Nafiz Anam
+Position : Full-Stack Developer
+Project : Responsive Demo website for Programming hero course
+Date : July 29th, 2021 
+
+==================*/
+
+/* ================
+Start of styling here 
+===================*/
+
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* common styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: #e76f51;
+}
+
+.btn {
+    border: none;
+}
+
+.btn:hover {
+    background-color: #e65d3b;
+    color: white;
+}
+
+/* start of header area */
+
+header {
+    background-color: #264653;
+    color: white;
+    height: 100%;
+}
+
+nav ul li {
+    padding-left: 15px;
+}
+
+#banner {
+    padding: 5% 0;
+}
+
+#banner img {
+    width: 90%;
+}
+
+header .btn {
+    background: #e76f51;
+    margin: 1% 0;
+    color: white;
+}
+
+#banner p {
+    font-weight: 300;
+    color: #e0e0e0;
+}
+
+#banner h1 {
+    font-size: 3em;
+    padding-bottom: 2%;
+    font-weight: 600;
+}
+
+.sub-heading {
+    font-size: 14px;
+}
+
+/* start of featured area  */
+
+#featured {
+    padding: 5% 0;
+}
+
+#featured h1,
+#news h1,
+#client h1,
+#contact h1 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+#featured p {
+    color: #e76f51;
+    font-weight: 600;
+}
+
+#featured hr {
+    margin-left: auto;
+    margin-right: auto;
+    color: #e76f51;
+}
+
+#featured img {
+    width: 80%;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+/* start of news area */
+
+#news {
+    padding: 5% 0;
+}
+
+#news .card {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#news .card-title {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: 3% 0;
+}
+
+#news .card-text {
+    font-size: 1em;
+    color: #6c6c6c;
+}
+
+#news .card-body a {
+    background-color: #e76f51;
+    color: white;
+    margin: 2% 0;
+}
+
+/* start of client area */
+
+#client {
+    padding: 5% 0;
+}
+
+#client .container {
+    padding: 0 10%;
+}
+
+#client .card-img-top {
+    width: 60%;
+    align-self: center;
+    border-radius: 50%;
+}
+
+#client .card {
+    padding: 10% 5%;
+    margin: 5%;
+}
+
+#client .card-text {
+    color: #6c6c6c;
+}
+
+#client a {
+    font-weight: 600;
+}
+
+#client p {
+    padding-top: 10px;
+}
+
+.stars {
+    justify-content: center;
+    color: #e76f51;
+    padding: 10px 0;
+}
+
+/* start of newsletter area */
+
+.newsletter-area {
+    background-color: #264653;
+    padding: 5% 0;
+}
+.newsletter {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-area h1 {
+    font-size: 2em;
+    font-weight: 800;
+    color: white;
+}
+
+.newsletter-area input {
+    width: 60%;
+    padding: 10px 0 10px 10px;
+    font-size: 1em;
+    border: solid 1px white;
+}
+
+.newsletter-area .form-btn {
+    width: 30%;
+    padding: 10px 0;
+    background-color: #e76f51;
+    color: white;
+    font-size: 1em;
+}
+
+/* start of faq area */
+
+#faq {
+    padding: 5% 0;
+}
+
+#faq img {
+    width: 100%;
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+#faq .row {
+    padding: 5% 0;
+}
+
+/* start of contact area */
+
+#contact {
+    text-align: center;
+    padding: 5% 0 0 0;
+}
+
+#contact p {
+    font-weight: 300;
+    color: #6c6c6c;
+}
+
+.contact {
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    padding: 5% 0;
+}
+
+.c-card {
+    border: 1px solid #6c6c6c;
+    padding: 3% 2% 2% 2%;
+}
+
+.c-card i {
+    font-size: 3em;
+    color: #e76f51;
+}
+
+.c-card h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0.6em 0;
+}
+
+.c-card p {
+    font-weight: 300;
+    color: #6c6c6c;
+}
+
+/* start of reach area */
+
+#reach {
+    padding-bottom: 5%;
+}
+
+.reach {
+    width: 60%;
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 0 10px 15px;
+    margin: 15px 0;
+    font-size: 1em;
+    font-weight: 300;
+    border: 1px solid #6c6c6c;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+}
+
+#reach .form-btn {
+    width: 20%;
+    background-color: #e76f51;
+    padding: 2% 4%;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+/* start of footer area  */
+
+footer {
+    background-color: #0b0d17;
+    color: white;
+    padding: 3% 0;
+}
+
+footer a {
+    color: white;
+    padding-right: 15px;
+    font-weight: 300;
+}
+
+footer a:hover {
+    color: #e76f51;
+}
+
+footer p {
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.footer-menu {
+    flex-wrap: wrap;
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.copyright-sm {
+    display: none;
+}
+
+footer img {
+    width: 80%;
+    display: block;
+    margin: 15px 0;
+}
+
+/* start of modal */
+
+.modal img {
+    padding: 20px 0;
+}
+
+.modal p {
+    color: red;
+}
+
+/* start of media queries */
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        width: 70%;
+    }
+    .navbar-brand img {
+        width: 50%;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .banner-img {
+        padding: 10% 0;
+    }
+    #featured h1,
+    #news h1,
+    #client h1,
+    #contact h1 {
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    #featured hr {
+        width: 30%;
+    }
+
+    #featured img {
+        padding: 10% 0;
+    }
+
+    #featured .img-3 {
+        width: 80%;
+    }
+
+    .img-2 {
+        filter: none !important;
+    }
+
+    .img-3 {
+        filter: grayscale(100%) !important;
+    }
+
+    .newsletter-area {
+        padding: 15% 0;
+    }
+    .newsletter-area h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    #faq,
+    #contact {
+        padding: 15% 0;
+    }
+    .faq-accordion {
+        padding: 20% 0 0 0;
+    }
+
+    .reach {
+        width: 90%;
+        margin: auto;
+    }
+
+    #reach .form-btn {
+        width: 100%;
+    }
+
+    footer img {
+        width: 40%;
+        display: block;
+        margin: auto;
+        padding-top: 10%;
+    }
+
+    .apps {
+        text-align: center;
+        padding: 10% 0;
+    }
+
+    #footer-content {
+        text-align: center;
+    }
+
+    .footer-link,
+    .footer-menu {
+        justify-content: center;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .copyright-sm {
+        display: block;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    #featured .img-3 {
+        width: 50%;
+        filter: none;
+    }
+
+    #featured .img-2 {
+        filter: grayscale(100%);
+    }
+
+    #news .card {
+        margin: 20px 0;
+    }
+
+    .newsletter-area {
+        padding: 10% 0;
+    }
+
+    .newsletter-area h1 {
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #faq img {
+        width: 70%;
+        padding-bottom: 10%;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    header .login-btn {
+        margin-left: 10px !important;
+    }
+
+    #banner {
+        padding: 15% 0;
+    }
+
+    #banner h1 {
+        font-size: 2em;
+    }
+
+    #featured {
+        padding: 15% 0;
+    }
+
+    #featured .img-3 {
+        width: 80%;
+        margin-top: 3%;
+    }
+
+    #news {
+        padding-bottom: 15%;
+    }
+
+    #news .card-title {
+        font-size: 1.2em;
+    }
+}
+
+/* ================
+End of Styling Here 
+==================*/
